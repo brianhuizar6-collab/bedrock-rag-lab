@@ -1,0 +1,80 @@
+[
+  {
+    "question_id": "A1",
+    "question_type": "answerable",
+    "question_text": "What is the primary key of the usage_events table?",
+    "expected_source": "data_dictionary.md"
+  },
+  {
+    "question_id": "A2",
+    "question_type": "answerable",
+    "question_text": "What are the four approved values for metric_type?",
+    "expected_source": "data_dictionary.md"
+  },
+  {
+    "question_id": "A3",
+    "question_type": "answerable",
+    "question_text": "What time does the monthly invoice generation job run, and which billing period does it cover?",
+    "expected_source": "pipeline_README.md"
+  },
+  {
+    "question_id": "A4",
+    "question_type": "answerable",
+    "question_text": "How is amount_due calculated for an invoice?",
+    "expected_source": "pipeline_README.md"
+  },
+  {
+    "question_id": "A5",
+    "question_type": "answerable",
+    "question_text": "What happens to a usage event that arrives after its billing period's invoice has already been generated?",
+    "expected_source": "pipeline_README.md, data_quality_rules.md"
+  },
+  {
+    "question_id": "A6",
+    "question_type": "answerable",
+    "question_text": "How does the pipeline detect a duplicate usage event?",
+    "expected_source": "data_quality_rules.md"
+  },
+  {
+    "question_id": "A7",
+    "question_type": "answerable",
+    "question_text": "What is ORPHANED_USAGE, and how is it handled?",
+    "expected_source": "data_quality_rules.md"
+  },
+  {
+    "question_id": "A8",
+    "question_type": "answerable",
+    "question_text": "What is the quality target for the usage-to-subscription match rate, and what triggers an investigation?",
+    "expected_source": "data_quality_rules.md"
+  },
+  {
+    "question_id": "A9",
+    "question_type": "answerable",
+    "question_text": "What four KPIs does the pipeline compute after each billing run?",
+    "expected_source": "pipeline_README.md"
+  },
+  {
+    "question_id": "A10",
+    "question_type": "answerable",
+    "question_text": "What is the materiality threshold that makes an invoice adjustment high-priority?",
+    "expected_source": "data_quality_rules.md"
+  },
+  {
+    "question_id": "U1",
+    "question_type": "unanswerable",
+    "question_text": "What was the actual billing accuracy rate last month?",
+    "expected_source": "none (runtime data, not in the document set)"
+  },
+  {
+    "question_id": "U2",
+    "question_type": "unanswerable",
+    "question_text": "What is the retry backoff configuration, in seconds, for the API gateway's usage event exporter?",
+    "expected_source": "none (a different system's implementation detail, never specified)"
+  },
+  {
+    "question_id": "U3",
+    "question_type": "unanswerable",
+    "question_text": "Who approves invoice adjustments that exceed the materiality threshold?",
+    "expected_source": "none (personnel/approval-workflow information not in the document set)"
+  }
+]

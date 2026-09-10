@@ -1,0 +1,9 @@
+{
+  "metadataAttributes": {
+    "doc_type": "pipeline_readme",
+    "domain": "usage_metering_billing",
+    "owner": "data_engineering",
+    "classification": "internal",
+    "version": "1.0"
+  }
+}
